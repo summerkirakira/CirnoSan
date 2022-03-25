@@ -9,7 +9,7 @@ port: 4080
 
 # 手动配置登录的QQ账号，可以选择多个，请注意启用nonebot_plugin_gocqhttp
 
-gocq_download_domain: download.fastgit.org # 如遇到下载出错或海外服务器请使用github.com哦
+gocq_download_domain: github.com # 如遇到下载出错或海外服务器请使用github.com哦
 
 superuser:
   - '12345678' # 主人账号
@@ -67,6 +67,9 @@ plugins_config: # 包含基础设置，精确控制请移步插件文件夹
   nonebot_plugin_tarot: # 塔罗牌！配置请参考https://github.com/KafCoppelia/nonebot_plugin_tarot
     enabled: true
 
+  nonebot_plugin_sc_player_search:
+    enabled: true
+
   nonebot_plugin_haruka_bot: # b站主播开播自动推送！配置请参考https://github.com/SK-415/HarukaBot
     enabled: true
 
@@ -80,4 +83,6 @@ nickname:
   - 小九
   - 琪露诺
 
+enabled_command_starter:
+  - .
 

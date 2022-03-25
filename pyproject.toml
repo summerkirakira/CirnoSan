@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "cirno_bot"
+name = "cirno_san"
 version = "0.1.0"
-description = "cirno_bot"
+description = "cirno_san"
 authors = []
 readme = "README.md"
 

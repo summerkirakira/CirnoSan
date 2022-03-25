@@ -57,6 +57,13 @@
       parameters: 无参数
       description: 获取当前绑定服务器插件列表
 
+- series: 星际公民玩家查询
+  plugin_name: nonebot_plugin_sc_player_search
+  commands:
+    - command: .id
+      parameters: 玩家ID
+      description: 查询玩家信息
+
 - series: 群词条库
   plugin_name: nonebot_plugin_archive
   commands:
