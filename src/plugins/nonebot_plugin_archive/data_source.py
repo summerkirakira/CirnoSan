@@ -1,11 +1,10 @@
 import nonebot
 import os
 import time
-import yaml
 
 
-database = nonebot.require("nonebot_plugin_database_connector")
-sqlite = database.sqlite_pool
+export = nonebot.require("nonebot_plugin_database_connector")
+mysql = export.mysql_pool
 entries: list = []
 current_folder = os.path.dirname(__file__)  # get current folder absolute path
 PICTURE_FOLDER = os.path.join(current_folder, 'picture_temp')
@@ -16,7 +15,7 @@ async def fetch_all_entries() -> list:
     global entries
     entries = []
     query = "SELECT creator_id, content, create_time, creator, enabled_groups, keywords, alias, fuzzy_search, is_random, is_private FROM archive WHERE is_latest = true and is_available = true"
-    rows = await sqlite.fetch_all(query=query)
+    rows = await mysql.fetch_all(query=query)
     for row in rows:
         entries.append({
             'creator_id': row[0],
@@ -52,7 +51,7 @@ async def insert_new_entry(creator_id: int, content: str, keywords: str, enabled
             'keywords': keywords,
             'enabled_groups': f"%{enabled_groups}%"
         }
-    await sqlite.execute(query, values=data)
+    await mysql.execute(query, values=data)
     query = "INSERT INTO archive(creator_id, creator, content, keywords, alias, fuzzy_search, is_private, is_available, enabled_groups, is_random, is_latest, create_time) " \
             "VALUES (:creator_id, :creator, :content, :keywords, :alias, :fuzzy_search, :is_private, :is_available, :enabled_groups, :is_random, :is_latest, :create_time)"
     data = {
@@ -69,7 +68,7 @@ async def insert_new_entry(creator_id: int, content: str, keywords: str, enabled
         'is_latest': True,
         'create_time': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(time.time())))
     }
-    await sqlite.execute(query, values=data)
+    await mysql.execute(query, values=data)
 
 
 async def remove_entry(entry: dict):
@@ -83,7 +82,7 @@ async def remove_entry(entry: dict):
     #     data = {
     #         'keywords': keywords
     #     }
-    #     await sqlite.execute(query, values=data)
+    #     await mysql.execute(query, values=data)
     # else:
     if entry['enabled_groups'] != 'all_groups':
         query = "UPDATE archive SET is_available=false WHERE keywords=:keywords and is_latest=true and enabled_groups like :enabled_groups"
@@ -91,20 +90,27 @@ async def remove_entry(entry: dict):
             'keywords': entry['keywords'],
             'enabled_groups': f"%{entry['enabled_groups']}%"
         }
-        await sqlite.execute(query, values=data)
+        await mysql.execute(query, values=data)
     else:
         query = "UPDATE archive SET is_available=false WHERE keywords=:keywords and is_latest=true"
         data = {
             'keywords': entry['keywords']
         }
-        await sqlite.execute(query, values=data)
+        await mysql.execute(query, values=data)
 
 
-def save_config_to_yaml(server_info):
-    with open(os.path.join(current_folder, 'config.yaml'), 'w', encoding='utf-8') as f:
-        f.write(yaml.dump(server_info, allow_unicode=True, sort_keys=False))
+"""
+async def get_picture(picture_name) -> bytes:
+    current_pictures = os.listdir(PICTURE_FOLDER)
+    if picture_name in current_pictures:
+        with open(os.path.join(PICTURE_FOLDER, picture_name), 'rb') as f:
+            file = f.read()
+        return file
+    else:
+        async with httpx.AsyncClient() as client:
+            r = await client.get(global_config.Config.picture_server_url)
+        with open(os.path.join(PICTURE_FOLDER, picture_name), 'wb') as f:
+            f.write(r.content)
+        return r.content
 
-
-def get_config() -> dict:
-    with open(os.path.join(current_folder, 'config.yaml'), 'r', encoding='utf-8') as f:
-        return yaml.safe_load(f.read())
+"""

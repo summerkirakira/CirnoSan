@@ -1,3 +1,4 @@
+import json
 from PIL import Image, ImageFont, ImageDraw
 import io
 import os

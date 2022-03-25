@@ -1,6 +1,7 @@
 import nonebot
 from nonebot import get_driver, on_message, Bot, on_startswith
-from nonebot.adapters.onebot.v11 import Bot, Event, GroupMessageEvent, MessageSegment, Message
+from nonebot.adapters.onebot.v11 import Bot, Event, Message, GroupMessageEvent
+from nonebot.adapters.onebot.v11 import MessageSegment
 from nonebot.params import State
 import requests
 import time
@@ -8,20 +9,18 @@ import re
 from nonebot.typing import T_State
 from .config import Config
 from nonebot.rule import Rule
-from .data_source import fetch_all_entries, remove_entry, insert_new_entry, current_folder, get_config, save_config_to_yaml
-import os
+from .data_source import fetch_all_entries, remove_entry, insert_new_entry, current_folder
 from .entries_picture import entries_list_photo
 import random
 import json
 
-
 global_config = get_driver().config
-database = nonebot.require("nonebot_plugin_database_connector")
-sqlite = database.sqlite_pool
+config = Config(**global_config.dict())
+export = nonebot.export()
 entries = []
 
 driver: nonebot.Driver = nonebot.get_driver()
-picture_server_url = None
+picture_server_url = '{}/?id='.format(global_config.picture_server_url)
 
 
 def is_entry_removable() -> Rule:
@@ -63,7 +62,7 @@ def is_entry() -> Rule:
             if keyword:
                 if keyword[0] != '.':
                     return False
-            if keyword and keyword[0] == '.':
+            if keyword and keyword[0] in global_config.enabled_command_starter:
                 keyword = keyword[1:].strip()
             else:
                 return False
@@ -92,11 +91,10 @@ def is_entry() -> Rule:
 
 def cq_url_convert(cq_url) -> str:
     matched = cq_url.group()
-    print(matched)
     data = {
         'url': matched
     }
-    requests.post(get_config()["image_server_url"] + '/upload', data=json.dumps(data))
+    requests.post(global_config.picture_upload_url, data=json.dumps(data))
     return picture_server_url + matched.split('/')[-2]
 
 
@@ -106,6 +104,14 @@ remove_entries = on_startswith('.移除词条', rule=is_entry_removable(), prior
 private_entries = on_startswith('.专属词条', priority=5)
 refresh_entries = on_startswith('.刷新词条', priority=5)
 show_entries = on_startswith('.词条', priority=4)
+
+
+@driver.on_startup
+async def entries_initialize():
+    global entries
+    entries = await fetch_all_entries()
+    export.entries = entries
+    pass
 
 
 @refresh_entries.handle()
@@ -131,10 +137,6 @@ async def _entries_modify(bot: Bot, event: Event, state: T_State=State()):
     regex_1 = 'https://gchat.qpic.cn.*?term=[0-9]'
     regex_2 = 'https://c2cpicdw.qpic.cn.*?term=[0-9]'
     if isinstance(event, GroupMessageEvent):
-        if get_config()["only_admin_can_edit"]:
-            if event.sender.role != 'ADMIN' and event.sender.role != 'OWNER':
-                await bot.send(event, Message([MessageSegment.text("诶？貌似只有群主和管理员才能编辑词条呢～")]))
-                return
         total_raw_message = re.sub(regex_1, cq_url_convert, str(event.get_message()))
         total_raw_message = re.sub(regex_2, cq_url_convert, total_raw_message)
         total_raw_message = total_raw_message.replace('&#91;', '[')
@@ -240,7 +242,7 @@ async def _remove_entries(bot: Bot, event: Event, state: T_State=State()):
 
 
 @private_entries.handle()
-async def _private_entries(bot: Bot, event: Event, state: T_State=State()):
+async def _private_entries(bot: Bot, event: Event, state: T_State = State()):
     global entries
     regex_1 = 'https://gchat.qpic.cn.*?term=[0-9]'
     regex_2 = 'https://c2cpicdw.qpic.cn.*?term=[0-9]'
@@ -336,30 +338,4 @@ async def _private_entries(bot: Bot, event: Event, state: T_State=State()):
 async def _show_entries(bot: Bot, event: Event):
     if isinstance(event, GroupMessageEvent):
         await bot.send(event, Message(MessageSegment.image(entries_list_photo(event.group_id, entries))))
-
-
-@driver.on_startup
-async def init_archive():
-    if not os.path.exists(os.path.join(current_folder, 'config.yaml')):
-        save_config_to_yaml({"image_server_url": "http://localhost:4500",
-                             "only_admin_can_edit": False})
-    global picture_server_url
-    picture_server_url = f'{get_config()["image_server_url"]}/?id='
-    query = '''
-    CREATE TABLE IF NOT EXISTS `archive`
-    (
-    creator_id TEXT,
-    create_time TEXT,
-    content TEXT,
-    is_private INTEGER,
-    creator TEXT,
-    is_available INTEGER,
-    enabled_groups TEXT,
-    keywords TEXT,
-    alias TEXT,
-    fuzzy_search INTEGER,
-    is_latest INTEGER,
-    is_random INTEGER
-    );'''
-    await sqlite.execute(query)
 

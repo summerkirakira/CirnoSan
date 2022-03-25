@@ -46,7 +46,7 @@ plugins_config: # 包含基础设置，精确控制请移步插件文件夹
     enabled: true # 其实这个选项并没有任何用处，但还是加上去惹，很有仪式感，不是么
 
   nonebot_plugin_message_recorder: # 消息记录器，需要配置监控的群才会生效哦
-    enabled: true # 请去 src/plugins/nonebot_message_recorder/config.yaml 配置
+    enabled: false # 请去 src/plugins/nonebot_message_recorder/config.yaml 配置
 
   nonebot_plugin_permission: # 一个简单的权限管理器
     enabled: true # 请去 src/plugins/nonebot_plugin_permission/config.yaml 配置

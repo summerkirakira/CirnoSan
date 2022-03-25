@@ -1,6 +1,5 @@
-import nonebot
-from nonebot import get_driver, on_startswith, Bot, on_message
-from nonebot.adapters.onebot.v11 import Bot, Event, MessageEvent, Message, GroupMessageEvent
+from nonebot import get_driver, Bot, on_message
+from nonebot.adapters.onebot.v11 import Bot, Event, Message, GroupMessageEvent
 from nonebot.adapters.onebot.v11 import MessageSegment
 from nonebot.params import State
 import httpx

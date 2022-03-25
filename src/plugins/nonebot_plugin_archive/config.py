@@ -7,12 +7,16 @@ class Config(BaseSettings):
     class Config:
         extra = "ignore"
         entry_modify_success = [
+            "诶嘿嘿～词条编辑成功哦～",
             "词条编辑成功哟～",
             "Success～",
+            "Succèss～",
             "词条录入成功...",
             "词条录入ing...\nSuccess...",
+            "少女折寿中...\nSuccess!"
         ]
         entry_remove_success = [
+            "诶嘿嘿～词条移除成功哦～",
             "词条移除成功哟～",
             "Success～",
             "Succèss～",

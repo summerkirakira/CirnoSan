@@ -14,8 +14,7 @@ record_dict = {}
 
 def enabled_record_checker() -> Rule:
     async def _enabled_record_checker(bot: Bot, event: GroupMessageEvent) -> bool:
-        if int(bot.self_id) in record_dict and \
-                event.group_id in record_dict[int(bot.self_id)]:
+        if int(bot.self_id) in record_dict and event.group_id in record_dict[int(bot.self_id)]:
             return True
         return False
 
