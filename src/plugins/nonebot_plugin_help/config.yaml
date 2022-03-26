@@ -69,6 +69,12 @@
     - command: .id
       parameters: 玩家ID
       description: 查询玩家信息
+- series: 星际公民舰队查询
+  plugin_name: nonebot_plugin_sc_organization_search
+  commands:
+    - command: .舰队查询
+      parameters: 舰队名字 如 菲雅利/镖局/炎黄/FEID
+      description: 查询舰队信息
 
 - series: 萌新礼包申请(镖局)
   plugin_name: nonebot_plugin_present_send
