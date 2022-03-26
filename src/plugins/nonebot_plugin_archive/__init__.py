@@ -7,20 +7,23 @@ import requests
 import time
 import re
 from nonebot.typing import T_State
-from .config import Config
+from .config import get_config, save_config_to_yaml, current_folder, Config
 from nonebot.rule import Rule
 from .data_source import fetch_all_entries, remove_entry, insert_new_entry, current_folder
 from .entries_picture import entries_list_photo
 import random
 import json
+import os
 
 global_config = get_driver().config
-config = Config(**global_config.dict())
 export = nonebot.export()
 entries = []
+if not os.path.exists(os.path.join(current_folder, "config.yaml")):
+    save_config_to_yaml(Config.Config.default_config)
+config: dict = get_config()
 
 driver: nonebot.Driver = nonebot.get_driver()
-picture_server_url = '{}/?id='.format(global_config.picture_server_url)
+picture_server_url = '{}/?id='.format(config['picture_server_url'])
 
 
 def is_entry_removable() -> Rule:
@@ -94,7 +97,7 @@ def cq_url_convert(cq_url) -> str:
     data = {
         'url': matched
     }
-    requests.post(global_config.picture_upload_url, data=json.dumps(data))
+    requests.post(config['picture_upload_url'], data=json.dumps(data))
     return picture_server_url + matched.split('/')[-2]
 
 

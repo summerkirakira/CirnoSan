@@ -62,12 +62,26 @@
     - command: .舰船名
       parameters: 无参数
       description: 查询舰船信息
+
 - series: 星际公民玩家查询
   plugin_name: nonebot_plugin_sc_player_search
   commands:
     - command: .id
       parameters: 玩家ID
       description: 查询玩家信息
+
+- series: 萌新礼包申请(镖局限定)
+  plugin_name: nonebot_plugin_present_send
+  commands:
+    - command: .申请礼包
+      parameters: 公民ID
+      description: 申请萌新礼包
+    - command: .礼包
+      parameters: 无参数
+      description: 查询萌新礼包申请/发送情况
+    - command: .发送礼包
+      parameters: 无参数
+      description: 发送萌新礼包
 
 - series: 群词条库
   plugin_name: nonebot_plugin_archive
