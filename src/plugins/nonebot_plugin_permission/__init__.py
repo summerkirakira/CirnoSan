@@ -1,52 +1,30 @@
-from nonebot import on_message, get_driver
-from nonebot.adapters.onebot.v11 import Bot, GroupMessageEvent
+from nonebot import on_message
+from nonebot.adapters.onebot.v11 import Bot, MessageEvent, GroupMessageEvent
+from nonebot import get_driver
 import os
+from .config import current_folder,get_config, save_config_to_yaml
 
-from .data_source import save_config_to_yaml, get_config, current_folder
+from .config import Config
 
-
-driver = get_driver()
-permission_config = {}
-
+global_config = get_driver().config
+if not os.path.exists(os.path.join(current_folder, "config.yaml")):
+    save_config_to_yaml(Config.Config.default_config)
+config: dict = get_config()
 
 permission_check = on_message(priority=0)
 
 
 @permission_check.handle()
-async def message_permission(bot: Bot, event: GroupMessageEvent):
-
+async def message_permission(bot: Bot, event: MessageEvent):
     permission_check.block = False
-    if not permission_config['permission_check']:
-        return
-    if event.sender.user_id in permission_config['black_list']:
+    if int(bot.self_id) not in config['ai_id']:
         permission_check.block = True
         return
-    if permission_config['only_admin_user'] and event.sender.role != 'ADMIN' and 'OWNER':
+    if event.sender.user_id in config['black_list']:
         permission_check.block = True
         return
-    if int(bot.self_id) not in permission_config['group_check']:
-        permission_check.block = True
-        return
-    if event.group_id not in permission_config['group_check'][int(bot.self_id)]:
-        permission_check.block = True
-        return
+    if isinstance(event, GroupMessageEvent):
+        if event.group_id not in config['enable_group']:
+            permission_check.block = True
+            return
 
-
-@driver.on_startup
-def init():
-    global permission_config
-    if not os.path.exists(os.path.join(current_folder, 'config.yaml')):
-        save_config_to_yaml({'permission_check': False,
-                             'only_admin_user': False,
-                             'group_check': {
-                                 12345667: [
-                                     12334,
-                                     12334
-                                 ],
-                             },
-                             'black_list': [
-                                 123123,
-                                 123234
-                             ]
-                             })
-    permission_config = get_config()

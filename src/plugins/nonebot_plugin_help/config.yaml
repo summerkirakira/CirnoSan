@@ -56,7 +56,12 @@
 #    - command: .插件列表
 #      parameters: 无参数
 #      description: 获取当前绑定服务器插件列表
-
+- series: 舰船查询
+  plugin_name: nonebot_plugin_ship_information
+  commands:
+    - command: .舰船名
+      parameters: 无参数
+      description: 查询舰船信息
 - series: 星际公民玩家查询
   plugin_name: nonebot_plugin_sc_player_search
   commands:

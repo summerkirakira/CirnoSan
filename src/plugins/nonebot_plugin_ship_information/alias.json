@@ -1,0 +1,631 @@
+{
+  "Carrack": [
+    "\u514b\u62c9\u514b",
+    "\u53e4\u62c9\u53e4"
+  ],
+  "Karthu Al": [
+    "\u5361\u56fe",
+    "\u7ea2\u8fa3\u6912",
+    "\u516b\u89d2",
+    "卡图al",
+    "卡图AL"
+  ],
+  "Arrow": [
+    "\u7bad\u5934",
+    "箭头",
+    "箭矢"
+  ],
+  "600i Exploration": [
+    "600i\u63a2\u7d22"
+  ],
+  "600i Touring": [
+    "600i\u65c5\u884c",
+    "600i\u65c5\u6e38"
+  ],
+  "Gladius": [
+    "\u77ed\u5251"
+  ],
+  "Gladiator": [
+    "\u89d2\u6597\u58eb",
+    "\u89d2\u6597\u58eb"
+  ],
+  "Corsair": [
+    "\u6d77\u76d7\u8239"
+  ],
+  "Constellation Andromeda": [
+    "\u4ed9\u5973\u5ea7",
+    "仙女"
+  ],
+  "Polaris": [
+    "\u5317\u6781\u661f"
+  ],
+  "Constellation Aquila": [
+    "\u5929\u9e70\u5ea7",
+    "天鹰"
+  ],
+  "Constellation Phoenix": [
+    "\u51e4\u51f0\u5ea7",
+    "\u6d85\u69c3",
+    "凤凰"
+  ],
+  "Constellation Taurus": [
+    "\u91d1\u725b\u5ea7",
+    "金牛"
+  ],
+  "Orion": [
+    "\u730e\u6237\u5ea7",
+    "\u5149\u5251",
+    "\u539f\u529b\u5149\u5251"
+  ],
+  "Ursa Rover": [
+    "\u5927\u718a\u5ea7"
+  ],
+  "Hull B": [
+    "\u8d27B",
+    "\u8d27b",
+    "货船B",
+    "货船b"
+  ],
+  "Hull C": [
+    "\u8d27C",
+    "\u8d27c",
+    "货船c",
+    "货船C"
+  ],
+  "Hull D": [
+    "\u8d27D",
+    "\u8d27d",
+    "货船d",
+    "货船D"
+  ],
+  "Hull E": [
+    "\u8d27E",
+    "\u8d27e",
+    "货船e",
+    "货船E"
+  ],
+  "Hull A": [
+    "\u8d27A",
+    "H A",
+    "HA",
+    "\u8d27a",
+    "货船A",
+    "货船a"
+  ],
+  "Razor": [
+    "剃刀"
+  ],
+  "Razor EX": [
+    "剃刀ex", "剃刀EX"
+  ],
+  "Razor LX": [
+    "\u5243\u5200lx", "剃刀LX"
+  ],
+  "Javelin": [
+    "\u6807\u67aa"
+  ],
+  "Kraken": [
+    "\u6d77\u5996"
+  ],
+  "Kraken Privateer": [
+    "白海妖", "海妖私掠", "黑海妖"
+  ],
+  "890 Jump": [
+    "890",
+    "890\u8dc3\u52a8",
+    "890j"
+  ],
+  "Pioneer": [
+    "\u5f00\u62d3\u8005",
+    "\u5f00\u62d3"
+  ],
+  "Freelancer": [
+    "\u81ea\u7531",
+    "\u9f9f\u5934\u8239",
+    "\u81ea\u7531\u67aa\u9a91\u5175",
+    "\u5fcd\u8005\u795e\u9f9f"
+  ],
+  "Nautilus": [
+    "\u9e66\u9e49\u87ba"
+  ],
+  "Hammerhead": [
+    "\u9524\u5934\u9ca8",
+    "\u9524\u5b50",
+    "\ud83d\udd28\ud83e\udd88"
+  ],
+  "Hercules Starlifter A2": [
+    "A2",
+    "a2",
+    "\u5927\u529b\u795ea2",
+    "大力神A2"
+  ],
+  "Hercules Starlifter M2": [
+    "M2",
+    "\u5927\u529b\u795eM2",
+    "\u5927\u529b\u795em2",
+    "m2"
+  ],
+  "Prowler": [
+    "\u5f98\u5f8a\u8005",
+    "\u5f98\u5f8a"
+  ],
+  "Genesis Starliner": [
+    "\u521b\u4e16\u7eaa"
+  ],
+  "Reclaimer": [
+    "\u56de\u6536\u8005",
+    "\u5783\u573e\u8239",
+    "\u86e4\u87c6"
+  ],
+  "Valkyrie": [
+    "\u5973\u6b66\u795e"
+  ],
+  "Hercules Starlifter C2": [
+    "C2",
+    "\u5927\u529b\u795eC2",
+    "c2",
+    "\u5927\u529b\u795ec2"
+  ],
+  "Crucible": [
+    "\u5769\u57da",
+    "\u5e72\u9505"
+  ],
+  "Endeavor": [
+    "\u594b\u8fdb",
+    "\u5927\u997c"
+  ],
+  "F8C Lightning Executive": [
+    "f8",
+    "f8c",
+    "F8C",
+    "F8C Lightning"
+
+  ],
+  "kraken": [
+    "\u6d77\u5996",
+    "\u8272\u56fe",
+    "\u745f\u56fe",
+    "\u8001\u5a46"
+  ],
+  "Mantis": [
+    "\u87b3\u8782"
+  ],
+  "Idris-M": [
+    "\u5c0f\u59e8M",
+    "\u4f0a\u5fb7\u91cc\u65afM",
+    "\u4f0a\u5fb7\u91cc\u65afm"
+  ],
+  "Idris-P": [
+    "\u5c0f\u59e8P",
+    "\u4f0a\u5fb7\u91cc\u65afP",
+    "\u4f0a\u5fb7\u91cc\u65afp"
+  ],
+  "Sabre": [
+    "\u519b\u5200"
+  ],
+  "Mercury Star Runner": [
+    "水星"
+  ],
+  "Vulcan": [
+    "\u706b\u795e"
+  ],
+  "San": [
+    "\u5927\u9752\u6912",
+    "\u6851\u6258\u8d77\u4e9a"
+  ],
+  "Starfarer": [
+    "\u6c11\u6cb9"
+  ],
+  "Starfarer Gemini": [
+    "\u519b\u6cb9"
+  ],
+  "Mustang Alpha": [
+    "\u91ce\u9a6cA",
+    "\u91ce\u9a6c",
+    "\u9a6ca",
+    "\ud83d\udc34A",
+    "野马阿尔法"
+  ],
+  "Mustang Delta": [
+    "\u91ce\u9a6cd",
+    "\u91ce\u9a6cD",
+    "野马德尔塔"
+  ],
+  "Mustang Beta": [
+    "\u91ce\u9a6cb",
+    "\u91ce\u9a6cB",
+    "野马贝塔",
+    "野马β"
+  ],
+  "Mustang Omega": [
+    "野马o",
+    "野马欧米伽"
+  ],
+  "Aurora ES": [
+    "\u6781\u5149ES",
+    "\u6781\u5149",
+    "\u6781\u5149es"
+  ],
+  "Aurora MR": [
+    "\u6781\u5149MR",
+    "\u6781\u5149mr"
+  ],
+  "P-52 Merlin": [
+    "P52",
+    "p52",
+    "梅林"
+  ],
+  "Sabre Raven": [
+    "\u6e21\u9e26",
+    "军刀渡鸦",
+    "军刀-渡鸦"
+  ],
+  "Aurora LX": [
+    "\u6781\u5149LX",
+    "\u6781\u5149\u63a2\u7d22",
+    "极光lx"
+  ],
+  "Aurora LN": [
+    "\u6781\u5149LN",
+    "\u6781\u5149ln"
+  ],
+  "C8 Pisces": [
+    "c8",
+    "\u53cc\u9c7c",
+    "\u53cc\u9c7c\u5ea7",
+    "C8"
+  ],
+  "C8X Pisces Expedition": [
+    "双鱼探索",
+    "c8x",
+    "C8X",
+    "C8x"
+  ],
+  "P-72 archimedes": [
+    "p72",
+    "\u963f\u57fa\u7c73\u5fb7",
+    "P72"
+  ],
+  "MPUV Cargo": [
+    "\u5357\u8239\u8d27\u8fd0",
+    "MPUV",
+    "mpuv"
+  ],
+  "Dragonfly Yellowjacket": [
+    "\u9ec4\u873b\u8713"
+  ],
+  "Dragonfly Black": [
+    "\u9ed1\u873b\u8713",
+    "蜻蜓"
+  ],
+  "Aurora CL": [
+    "\u6781\u5149CL",
+    "\u6781\u5149cl"
+  ],
+  "Nox": [
+    "nox",
+    "Nox"
+  ],
+  "Nox Kue": [
+    "nox kue"
+  ],
+  "Avenger Stalker": [
+    "\u590d\u4ec7\u8ffd\u730e"
+  ],
+  "Reliant Kore": [
+    "\u4fe1\u8d56",
+    "信赖基础"
+  ],
+  "Reliant Tana": [
+    "\u4fe1\u8d56\u6b66\u88c5"
+  ],
+  "Reliant Sen": [
+    "信赖科考"
+  ],
+  "Cyclone TR": [
+    "\u65cb\u98ce",
+    "旋风TR",
+    "旋风tr"
+  ],
+  "Cyclone AA": [
+    "旋风AA",
+    "旋风aa"
+  ],
+  "Cyclone MT": [
+    "旋风MT",
+    "旋风mt"
+  ],
+  "Cyclone RC": [
+    "旋风RC",
+    "旋风rc"
+  ],
+  "Cyclone RN": [
+    "旋风RN",
+    "旋风rn"
+  ],
+  "Herald": [
+    "\u4fe1\u4f7f"
+  ],
+  "Merchantman": [
+    "\u5df4\u5546",
+    "\u5df4\u5974\u5546\u8239",
+    "\u5df4\u5974\u884c\u8239",
+    "\u5df4\u5974\u884c\u5546",
+    "巴奴",
+    "巴努"
+  ],
+  "Avenger Warlock": [
+    "\u590d\u4ec7\u672f\u58eb"
+  ],
+  "Reliant Mako": [
+    "\u4fe1\u8d56\u65b0\u95fb"
+  ],
+  "Cutlass Black": [
+    "\u9ed1\u5f2f\u5200"
+  ],
+  "Cutlass Blue": [
+    "\u84dd\u5f2f\u5200"
+  ],
+  "Cutlass Red": [
+    "\u7ea2\u5f2f\u5200"
+  ],
+  "Cutlass Steel": [
+    "钢弯刀",
+    "铁弯刀"
+  ],
+  "Hawk": [
+    "\u730e\u9e70",
+    "\u5c0f\u9e70"
+  ],
+  "Nova Tank": [
+    "\u5766\u514b",
+    "\u65b0\u661f",
+    "\u65b0\u661f\u5766\u514b"
+  ],
+  "Buccaneer": [
+    "\u63a0\u593a",
+    "\u63a0\u593a\u8005"
+  ],
+  "Freelancer DUR": [
+    "\u81ea\u7531dur",
+    "自由DUR",
+    "\u81ea\u7531\u63a2\u7d22",
+    "自由枪骑兵dur",
+    "自由枪骑兵DUR"
+  ],
+  "Freelancer MIS": [
+    "\u81ea\u7531mis",
+    "自由MAX",
+    "自由枪骑兵MIS",
+    "自由枪骑兵mis"
+  ],
+  "Freelancer MAX": [
+    "\u81ea\u7531max",
+    "自由MAX",
+    "自由枪骑兵MAX",
+    "自由枪骑兵max"
+  ],
+  "SRV": [
+    "\u7275\u5f15\u8239"
+  ],
+  "Prospector": [
+    "\u52d8\u63a2\u8005",
+    "\u5c0f\u77ff",
+    "\u5c0f\u77ff\u8239"
+  ],
+  "Hurricane": [
+    "\u98d3\u98ce"
+  ],
+  "Terrapin": [
+    "\u6c34\u9f9f"
+  ],
+  "Redeemer": [
+    "\u6551\u8d4e",
+    "\u6551\u8d4e\u8005"
+  ],
+  "Apollo Triage": [
+    "\u963f\u6ce2\u7f57",
+    "\u7ea2\u963f\u6ce2\u7f57",
+    "\u7ea2\u6ce2\u7f57"
+  ],
+  "Apollo Medivac": [
+    "\u767d\u963f\u6ce2\u7f57",
+    "\u767d\u6ce2\u7f57"
+  ],
+  "Blade": [
+    "\u5200\u950b"
+  ],
+  "Vanguard Hoplite": [
+    "\u5148\u950b\u91cd\u88c5\u5175",
+    "\u5148\u950b\u8fd0\u5175"
+  ],
+  "Vanguard Sentinel": [
+    "\u5148\u950b\u54e8\u5175"
+  ],
+  "Vanguard Warden": [
+    "\u5148\u950b",
+    "\u5148\u950b\u5178\u72f1\u957f"
+  ],
+  "Vanguard Harbinger": [
+    "\u5148\u950b\u5148\u9a71\u8005",
+    "\u5148\u950b\u8f70\u70b8",
+    "\u5148\u950b\u5148\u9063"
+  ],
+  "Caterpillar": [
+    "\u6bdb\u866b",
+    "\u6bdb\u6bdb\u866b",
+    "\u8dd1\u5546\u63a8\u9009"
+  ],
+  "Scythe": [
+    "\u6b7b\u9570"
+  ],
+  "Eclipse": [
+    "\u65e5\u8680"
+  ],
+  "Ares Ion": [
+    "\u6218\u795e\u79bb\u5b50",
+    "白战神",
+    "战神离子光"
+  ],
+  "Ares Inferno": [
+    "\u6218\u795e\u5730\u72f1\u706b",
+    "战神",
+    "黑战神",
+    "战神地狱"
+  ],
+  "ROC": [
+    "\u77ff\u8f66",
+    "\u5c0f\u8d85\u5feb\u4e50\u8f66"
+  ],
+  "ROC-DS": [
+    "ROC-DS",
+    "roc-ds"
+  ],
+  "Vulture": [
+    "\u79c3\u9e6b"
+  ],
+  "MPUV Personnel": [
+    "\u5357\u8239\u8f7d\u4eba",
+    "mpuv载人"
+  ],
+  "Talon": [
+    "利爪",
+    "利爪实弹"
+  ],
+  "Talon Shrike": [
+    "利爪伯劳",
+    "利爪导弹"
+  ],
+  "Defender": [
+    "\u5df4\u536b",
+    "\u5927\u95f8\u87f9",
+    "\u5df4\u5974\u9632\u536b\u8005"
+  ],
+  "Glaive": [
+    "\u957f\u5200",
+    "\u957f\u5200\u7ea7"
+  ],
+  "Greycat PTV": [
+    "ptv",
+    "PTV",
+    "ptv小车"
+  ],
+  "Nomad": [
+    "\u6e38\u7267",
+    "\u6e38\u7267\u8005"
+  ],
+  "Retaliator": [
+    "\u62a5\u590d\u8f70\u70b8",
+    "报复",
+    "报复着"
+  ],
+  "F7A Hornet": [
+    "\u5927\u9ec4\u8702",
+    "\u9ec4\u8702",
+    "\u666e\u9ec4",
+    "f7c"
+  ],
+  "F7C Hornet Wildfire": [
+    "\u9ec4\u8702\u91ce\u706b"
+  ],
+  "F7C-R Hornet Tracker": [
+    "\u9ec4\u8702\u8ffd\u730e",
+    "F7C-R"
+  ],
+  "F7C-S Hornet Ghost": [
+    "\u9ec4\u8702\u9b3c\u9b45",
+    "大黄蜂追踪者",
+    "黄蜂追踪者",
+    "F7C-S"
+  ],
+  "F7C-M Super Hornet Heartseeker": [
+    "\u8d85\u9ec4\u5bfb\u5fc3\u8005"
+  ],
+  "F7C-M Super Hornet": [
+    "\u8d85\u9ec4"
+  ],
+  "Avenger Titan": [
+    "\u590d\u4ec7\u6cf0\u5766",
+    "\u6cf0\u5766",
+    "复仇者泰坦",
+    "复仇者",
+    "泰坦"
+  ],
+  "600i Executive Edition": [
+    "600i\u884c\u653f"
+  ],
+  "Mole": [
+    "mole",
+    "鼹鼠",
+    "Mole"
+  ],
+  "Perseus": [
+    "\u82f1\u4ed9\u5ea7"
+  ],
+  "Scorpius": [
+    "\u5929\u874e\u5ea7"
+  ],
+  "m50": [
+    "M50",
+    "m50"
+  ],
+  "X1": [
+    "x1"
+  ],
+  "X1 Velocity": [
+    "X1速度"
+  ],
+  "X1 Force": [
+    "X1力量"
+  ],
+  "Liberator": [
+    "解放者",
+    "解放"
+  ],
+  "Dragonfly Star Kitten": [
+    "粉蜻蜓"
+  ],
+  "Ballista": [
+    "弩炮"
+  ],
+  "315p": [
+    "315P"
+  ],
+  "325a": [
+    "325A"
+  ],
+  "350r": [
+    "350R"
+  ],
+  "400i": [
+    "400i"
+  ],
+  "Carrack Expedition": [
+    "克拉克远征"
+  ],
+  "Sabre Comet": [
+    "军刀彗星",
+    "军刀-彗星"
+  ],
+  "Raft": [
+    "木筏"
+  ],
+  "Spartan": [
+    "斯巴达"
+  ],
+  "Odyssey": [
+    "奥德赛"
+  ],
+  "Railen": [
+    "锐伦",
+    "莱伦"
+  ],
+  "HoverQuad": [
+    "悬浮驷",
+    "悬浮4",
+    "悬浮四",
+    "悬浮",
+    "HoverQuad",
+    "hoverquad"
+  ]
+}
