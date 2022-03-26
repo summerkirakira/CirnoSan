@@ -70,7 +70,7 @@
       parameters: 玩家ID
       description: 查询玩家信息
 
-- series: 萌新礼包申请(镖局限定)
+- series: 萌新礼包申请(镖局)
   plugin_name: nonebot_plugin_present_send
   commands:
     - command: .申请礼包
@@ -101,6 +101,13 @@
     - command: .
       parameters: 词条名(直接跟在.后面)
       description: 自动回复设定的词条内容
+
+- series: 服务器状态查询
+  plugin_name: nonebot_plugin_sc_server_status_check
+  commands:
+    - command: .服务器状态
+      parameters: 无参数
+      description: 获取星际公民服务器当前运行状态
 
 - series: 汇率转换
   plugin_name: nonebot_plugin_currency_conversion
