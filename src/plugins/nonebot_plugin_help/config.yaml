@@ -69,25 +69,13 @@
     - command: .id
       parameters: 玩家ID
       description: 查询玩家信息
+
 - series: 星际公民舰队查询
-  plugin_name: nonebot_plugin_sc_organization_search
+  plugin_name: nonebot_plugin_organization_search
   commands:
     - command: .舰队查询
       parameters: 舰队名字 如 菲雅利/镖局/炎黄/FEID
       description: 查询舰队信息
-
-- series: 萌新礼包申请(镖局)
-  plugin_name: nonebot_plugin_present_send
-  commands:
-    - command: .申请礼包
-      parameters: 公民ID
-      description: 申请萌新礼包
-    - command: .礼包
-      parameters: 无参数
-      description: 查询萌新礼包申请/发送情况
-    - command: .发送礼包
-      parameters: 无参数
-      description: 发送萌新礼包
 
 - series: 群词条库
   plugin_name: nonebot_plugin_archive
@@ -107,6 +95,84 @@
     - command: .
       parameters: 词条名(直接跟在.后面)
       description: 自动回复设定的词条内容
+- series: SC信息查询
+  plugin_name: nonebot_plugin_default_sc_entries
+  commands:
+    - command: .注册
+      parameters: 无参数
+      description: 新手注册引导
+    - command: .教程
+      parameters: 无参数
+      description: 新手指南及教程合集
+    - command: .登录
+      parameters: 无参数
+      description: 彻底解决官网在国内的登陆问题～
+    - command: .键位
+      parameters: 无参数
+      description: 键位图
+    - command: .汉化
+      parameters: 无参数
+      description: 汉化问题解答
+    - command: .EAC
+      parameters: 无参数
+      description: EAC问题解答
+    - command: .价格表
+      parameters: 无参数
+      description: 万恶之源
+    - command: .auec价格表
+      parameters: 无参数
+      description: 游戏内舰船购买/租借价格表
+    - command: .不可升级
+      parameters: 无参数
+      description: 当前禁止升级的船只列表～
+    - command: .监听器
+      parameters: 无参数
+      description: 萌新赚钱的好方法～
+    - command: .跑商路径
+      parameters: 无参数
+      description: 跑商一夜暴富吧！
+    - command: .矿物价格
+      parameters: 无参数
+      description: 矿物价格表
+    - command: .挖矿
+      parameters: 无参数
+      description: 挖矿一夜暴富吧！
+    - command: .全览图
+      parameters: 无参数
+      description: 飞船全览图
+    - command: .地图
+      parameters: 无参数
+      description: 获取地图，也可使用.18区/罗威尔/新巴贝奇/奥里森地图哦～
+    - command: .着陆区
+      parameters: 无参数
+      description: 各星球着陆区指引
+    - command: .改船
+      parameters: 无参数
+      description: 模拟改船及配件购买地址
+    - command: .着色器
+      parameters: 无参数
+      description: 星际公民着色器解答
+    - command: .购买
+      parameters: 无参数
+      description: 物品购买地址及其他功能
+    - command: .重置
+      parameters: 无参数
+      description: 官网重置教程
+    - command: .退款
+      parameters: 无参数
+      description: 官网退款教程
+    - command: .保险
+      parameters: 无参数
+      description: 保险问题解答
+    - command: .删档
+      parameters: 无参数
+      description: 删档问题解答
+    - command: .官网
+      parameters: 无参数
+      description: 萝卜的家
+    - command: .词条一览
+      parameters: 无参数
+      description: 更多功能请查看自定义词条哦～
 
 - series: 服务器状态查询
   plugin_name: nonebot_plugin_sc_server_status_check
@@ -128,6 +194,19 @@
     - command: .开黑啦
       parameters: 无参数
       description: 获取当前服务器绑定的开黑啦在线信息
+
+- series: 萌新礼包申请(镖局)
+  plugin_name: nonebot_plugin_present_send
+  commands:
+    - command: .申请礼包
+      parameters: 公民ID
+      description: 申请萌新礼包
+    - command: .礼包
+      parameters: 无参数
+      description: 查询萌新礼包申请/发送情况
+    - command: .发送礼包
+      parameters: 无参数
+      description: 发送萌新礼包
 
 #- series: MC骰娘
 #  plugin_name: nonebot_plugin_mc_cocdicer
@@ -159,15 +238,15 @@
       parameters: 无
       description: 查看当前菜单
 
-- series: 塔罗牌
-  plugin_name: nonebot_plugin_tarot
-  commands:
-    - command: .占卜
-      parameters: 无
-      description: 占卜4张塔罗牌
-    - command: .塔罗牌
-      parameters: 无
-      description: 得到单张塔罗牌回应
+#- series: 塔罗牌
+#  plugin_name: nonebot_plugin_tarot
+#  commands:
+#    - command: .占卜
+#      parameters: 无
+#      description: 占卜4张塔罗牌
+#    - command: .塔罗牌
+#      parameters: 无
+#      description: 得到单张塔罗牌回应
 
 - series: B站主播信息推送
   plugin_name: nonebot_plugin_haruka_bot
@@ -186,7 +265,7 @@
       description: 开启全体 后，CirnoBot将会在该主播的开播提醒消息前 @全体成员。
     - command: .开启权限 | .关闭权限
       parameters: 无
-      description: 开启权限后，当前群内只有群主、管理员、和机器人主人（superuser）可以使用 HarukaBot。
+      description: 开启权限后，当前群内只有群主、管理员可以使用。
 
 - series: 帮助
   plugin_name: nonebot_plugin_help
