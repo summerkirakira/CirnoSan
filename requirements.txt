@@ -10,7 +10,6 @@ APScheduler==3.8.1
 arrow==1.2.2
 asgiref==3.5.0
 async-timeout==4.0.2
-asyncpg==0.25.0
 atlastk==0.13
 attrs==21.4.0
 beautifulsoup4==4.10.0
