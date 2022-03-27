@@ -17,6 +17,9 @@ async def _get_organization(bot: Bot, event: GroupMessageEvent):
     if not organization_name:
         await bot.send(event, '请输入舰队名称哦～')
         return
+    if not organization_name.isalnum():
+        await bot.send(event, '舰队名称只能是字母和数字哦～')
+        return
     if organization_name in name_dict:
         organization_name = name_dict[organization_name]
     await bot.send(event, MessageSegment.image(await request_organization_pic(organization_name)))
