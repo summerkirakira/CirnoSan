@@ -1,12 +1,16 @@
 import os
 import json
 import time
-from .config import Config
+from .config import get_config, save_config_to_yaml, Config
 
 current_folder = os.path.dirname(__file__)  # get current folder absolute path
 PRESENT_PATH = os.path.join(current_folder, 'present.json')  # resource picture pat
 with open(PRESENT_PATH, 'r') as f:
     presents = json.loads(f.read())
+
+if not os.path.exists(os.path.join(current_folder, "config.yaml")):
+    save_config_to_yaml(Config.Config.default_config)
+config: dict = get_config()
 
 
 def load_presents():
@@ -23,7 +27,7 @@ def insert_presents_data(qq_id, handle):
         "requestTime": int(time.time()),
         "sponsors": {}
     }
-    for i in Config.Config.sponsor_id:
+    for i in config['sponsor_id']:
         requests_data["sponsors"][str(i)] = {
             "hasSend": False,
             "sendTime": 0
