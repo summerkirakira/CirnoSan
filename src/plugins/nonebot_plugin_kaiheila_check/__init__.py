@@ -1,4 +1,4 @@
-from nonebot import on_startswith
+from nonebot import on_startswith, on_regex
 from nonebot import get_driver
 from nonebot.adapters.onebot.v11 import Bot, Event, GroupMessageEvent, MessageSegment, Message
 from .data_source import kaihei_message_process
@@ -9,7 +9,8 @@ from .config import get_config
 
 driver = get_driver()
 
-kaihei_status_check = on_startswith('.开黑啦', priority=15)
+# kaihei_status_check = on_startswith('.开黑啦', priority=15)
+kaihei_status_check = on_regex('^\.开黑|^\.kook|^\.语音', priority=15)
 
 
 @kaihei_status_check.handle()
