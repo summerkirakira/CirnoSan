@@ -1,0 +1,3842 @@
+[
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 100,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Arbor MH1",
+      "description": "The Arbor MH1 became the universe's most heralded mining laser thanks to Greycat Industrial's exacting standards and business prowess. The laser's solid, reliable design found favor among industrial and solo operations for effectively balancing speed and safety. Greycat capitalized on this reputation by securing exclusive contracts that made the Arbor MH1 the standard laser head on most mining ships.",
+      "mass": 1,
+      "ref": "fbb62ed7-1dbc-4728-a0f1-3b649f33b8d2",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 10,
+        "thermalEnergyDraw": 20,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 500,
+        "powerDraw": 1000,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 10,
+          "zeroDamageRange": 15,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 9,
+            "damageEnergy": 1,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": 0,
+        "laserInstability": 0,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": 0,
+        "catastrophicChargeWindowRateModifier": 0
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "MISC",
+          "name": "Musashi Industrial & Starflight Concern",
+          "description": "Mass produces very efficient, modular ships, mostly armored freighters of different sizes that make them the preferred brand for traders and larger corporations. Over thirty years ago, MISC signed a lend-lease agreement to establish a tech trade with Xi’An engineers.",
+          "ref": "b28a5c61-63a4-478b-8047-5fba545d5b8a",
+          "calculatorName": "MISC"
+        }
+      }
+    },
+    "localName": "mining_laser_grin_arbor_s0"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 100,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount roc_ds",
+      "name": "Arbor MHV",
+      "description": "The Arbor has became the universe's most heralded mining laser thanks to Greycat Industrial's exacting standards and business prowess. The MHV takes that same classic design and reimagines it for a more compact mining-rig while still delivering the solid and reliable performance that miners have come to rely on.",
+      "mass": 1,
+      "ref": "1c2bab01-941b-4515-a6a4-5845aaa95696",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 10,
+        "thermalEnergyDraw": 20,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 1250,
+        "powerDraw": 1500,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 25,
+          "zeroDamageRange": 60,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 10,
+            "damageEnergy": 1.5,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": 0,
+        "laserInstability": 0,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": 0,
+        "catastrophicChargeWindowRateModifier": 0
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "GRIN",
+          "name": "Greycat Industrial",
+          "description": "A trusted manufacturer of industrial tools since 2337, the company’s extensive line of industrial equipment and armor make it one of the most respected brand names around. Greycat has remained a UEE staple for centuries thanks to their streamlined-yet-inventive designs, exacting safety standards, and a diverse product line.",
+          "ref": "819545f4-18af-49a6-814e-ca4fd08f56e5",
+          "calculatorName": "GREYCAT"
+        }
+      }
+    },
+    "localName": "grin_roc_ds_mining_head"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 100,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Arbor MHV",
+      "description": "The Arbor has became the universe's most heralded mining laser thanks to Greycat Industrial's exacting standards and business prowess. The MHV takes that same classic design and reimagines it for a more compact mining-rig while still delivering the solid and reliable performance that miners have come to rely on.",
+      "mass": 1,
+      "ref": "4f04ce3b-abfd-4e2a-8c69-c00e477d3fd8",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 10,
+        "thermalEnergyDraw": 20,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 1250,
+        "powerDraw": 1500,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 15,
+          "zeroDamageRange": 25,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 8,
+            "damageEnergy": 1,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": 0,
+        "laserInstability": 0,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": 0,
+        "catastrophicChargeWindowRateModifier": 0
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "GRIN",
+          "name": "Greycat Industrial",
+          "description": "A trusted manufacturer of industrial tools since 2337, the company’s extensive line of industrial equipment and armor make it one of the most respected brand names around. Greycat has remained a UEE staple for centuries thanks to their streamlined-yet-inventive designs, exacting safety standards, and a diverse product line.",
+          "ref": "819545f4-18af-49a6-814e-ca4fd08f56e5",
+          "calculatorName": "GREYCAT"
+        }
+      }
+    },
+    "localName": "grin_roc_mining_head"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 130,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Helix I",
+      "description": "Thermyte Concern engineered the Helix I to be a mining laser with impressive power and increased range to make it ideal when dealing with difficult deposits. Yet, all this power can be dangerous, as it also slows the throttle's responsiveness and increases the intensity of explosions. To some, the effective use of the Helix I has become a sign of a true mining professional.",
+      "mass": 1,
+      "ref": "153d53e7-c5e0-445c-82ac-6aae2073b565",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 500,
+        "powerDraw": 1000,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 12.5,
+          "zeroDamageRange": 18.75,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 13,
+            "damageEnergy": 1,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 5,
+        "resistanceModifier": -0.2,
+        "laserInstability": -50,
+        "optimalChargeWindowSizeModifier": 30,
+        "shatterdamageModifier": 150,
+        "optimalChargeWindowRateModifier": 30,
+        "catastrophicChargeWindowRateModifier": 30
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "THCN",
+          "name": "Thermyte Concern",
+          "description": "Thermyte Concern",
+          "ref": "d1a1bf03-89d9-4eae-ac34-11eeb8e45d8f",
+          "calculatorName": "THCN"
+        }
+      }
+    },
+    "localName": "mining_laser_thcn_helix_s0"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 130,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Impact I",
+      "description": "Mine difficult deposits easier and faster with the Impact I. Thermyte Concern created special focus lenses to increase the laser's power and provide the precision required for a larger optimal charge window. This powerful mining laser does require careful management, as deposits will overheat quicker and explode with more force.",
+      "mass": 1,
+      "ref": "af6cede9-7ae7-47a6-ba91-dac5f020f698",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11,
+        "thermalEnergyDraw": 22,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 500,
+        "powerDraw": 1000,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 10,
+          "zeroDamageRange": 15,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 11.25,
+            "damageEnergy": 1,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": -0.1,
+        "laserInstability": 20,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 50,
+        "optimalChargeWindowRateModifier": 20,
+        "catastrophicChargeWindowRateModifier": 100
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "THCN",
+          "name": "Thermyte Concern",
+          "description": "Thermyte Concern",
+          "ref": "d1a1bf03-89d9-4eae-ac34-11eeb8e45d8f",
+          "calculatorName": "THCN"
+        }
+      }
+    },
+    "localName": "mining_laser_thcn_impact_s0"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 90,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Klein-S1",
+      "description": "Shubin designed the Klein-S1 to generate a powerful laser that makes mining faster. This increased speed incurs additional risk by boosting a deposit's instability and chance of exploding, but if used correctly, the Klein-S1 can quickly reap rewards for the careful miner.",
+      "mass": 1,
+      "ref": "d04aed0b-3c4a-4aaf-96c6-1abf8b32c12a",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 500,
+        "powerDraw": 1000,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 10,
+          "zeroDamageRange": 15,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 9.9,
+            "damageEnergy": 1,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": -0.1,
+        "laserInstability": 50,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": 0,
+        "catastrophicChargeWindowRateModifier": 0
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "SHIN",
+          "name": "Shubin Interstellar",
+          "description": "Shubin Interstellar Description",
+          "ref": "ab35f85f-919f-4457-8d58-4e885ea6c5c0",
+          "calculatorName": "SHIN"
+        }
+      }
+    },
+    "localName": "mining_laser_shin_klein_s0"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 120,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Hofstede-S1",
+      "description": "Built with safety in mind, the Hofstede-S1 sacrifices range and focuses on dampening a deposit's instability to make it safer to mine. Miners looking to decrease the chance of a catastrophic explosion should turn to this reliable and affordable mining laser from Shubin.",
+      "mass": 1,
+      "ref": "a5b839fe-c1cc-4cbd-abb6-c9296ad84d46",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11,
+        "thermalEnergyDraw": 22,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 500,
+        "powerDraw": 1000,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 5,
+          "zeroDamageRange": 7.5,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 9.9,
+            "damageEnergy": 1,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": 0,
+        "laserInstability": -50,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": 0,
+        "catastrophicChargeWindowRateModifier": 0
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "SHIN",
+          "name": "Shubin Interstellar",
+          "description": "Shubin Interstellar Description",
+          "ref": "ab35f85f-919f-4457-8d58-4e885ea6c5c0",
+          "calculatorName": "SHIN"
+        }
+      }
+    },
+    "localName": "mining_laser_shin_hofstede_s0"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 120,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 0,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Lancet MH1",
+      "description": "Greycat classifies the Lancet MH1 as a support laser best utilized when mining with others. Generating a weaker than average beam, the Lancet MH1 safely heats deposits to reduce their resistance and instability but struggles to shatter them on its own. For mining crews, it's an ideal support laser to use alongside other lasers.",
+      "mass": 1,
+      "ref": "f54f33f1-39d2-4319-a74f-6692f40e9735",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 1250,
+        "powerDraw": 1500,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 10,
+          "zeroDamageRange": 15,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 5,
+            "damageEnergy": 0.5,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": -0.5,
+        "laserInstability": -30,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": -30,
+        "catastrophicChargeWindowRateModifier": -30
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "GRIN",
+          "name": "Greycat Industrial",
+          "description": "A trusted manufacturer of industrial tools since 2337, the company’s extensive line of industrial equipment and armor make it one of the most respected brand names around. Greycat has remained a UEE staple for centuries thanks to their streamlined-yet-inventive designs, exacting safety standards, and a diverse product line.",
+          "ref": "819545f4-18af-49a6-814e-ca4fd08f56e5",
+          "calculatorName": "GREYCAT"
+        }
+      }
+    },
+    "localName": "mining_laser_grin_lancet_s0"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 100,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 1,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Arbor MH1",
+      "description": "The Arbor MH1 became the universe's most heralded mining laser thanks to Greycat Industrial's exacting standards and business prowess. The laser's solid, reliable design found favor among industrial and solo operations for effectively balancing speed and safety. Greycat capitalized on this reputation by securing exclusive contracts that made the Arbor MH1 the standard laser head on most mining ships.",
+      "mass": 1,
+      "ref": "8bfc261a-6c67-4bec-b5b5-71407e086ec9",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 10,
+        "thermalEnergyDraw": 20,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 2500,
+        "powerDraw": 3000,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 30,
+          "zeroDamageRange": 150,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1850,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": 0,
+        "laserInstability": 0,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": 0,
+        "catastrophicChargeWindowRateModifier": 0
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "MISC",
+          "name": "Musashi Industrial & Starflight Concern",
+          "description": "Mass produces very efficient, modular ships, mostly armored freighters of different sizes that make them the preferred brand for traders and larger corporations. Over thirty years ago, MISC signed a lend-lease agreement to establish a tech trade with Xi’An engineers.",
+          "ref": "b28a5c61-63a4-478b-8047-5fba545d5b8a",
+          "calculatorName": "MISC"
+        }
+      }
+    },
+    "localName": "mining_laser_grin_arbor_s1"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 130,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 1,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Helix I",
+      "description": "Thermyte Concern engineered the Helix I to be a mining laser with impressive power and increased range to make it ideal when dealing with difficult deposits. Yet, all this power can be dangerous, as it also slows the throttle's responsiveness and increases the intensity of explosions. To some, the effective use of the Helix I has become a sign of a true mining professional.",
+      "mass": 1,
+      "ref": "81e1a10a-c7bd-401f-92e1-284115dcd6e1",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 3250,
+        "powerDraw": 3900,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 37.5,
+          "zeroDamageRange": 187.5,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 2300,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 5,
+        "resistanceModifier": -0.1,
+        "laserInstability": -30,
+        "optimalChargeWindowSizeModifier": 15,
+        "shatterdamageModifier": 50,
+        "optimalChargeWindowRateModifier": 20,
+        "catastrophicChargeWindowRateModifier": 20
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "THCN",
+          "name": "Thermyte Concern",
+          "description": "Thermyte Concern",
+          "ref": "d1a1bf03-89d9-4eae-ac34-11eeb8e45d8f",
+          "calculatorName": "THCN"
+        }
+      }
+    },
+    "localName": "mining_laser_thcn_helix_s1"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 120,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 1,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Hofstede-S1",
+      "description": "Built with safety in mind, the Hofstede-S1 sacrifices range and focuses on dampening a deposit's instability to make it safer to mine. Miners looking to decrease the chance of a catastrophic explosion should turn to this reliable and affordable mining laser from Shubin.",
+      "mass": 1,
+      "ref": "077a4a94-6296-4a83-a6c4-f215f7efd1df",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11,
+        "thermalEnergyDraw": 22,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 2000,
+        "powerDraw": 2400,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 15,
+          "zeroDamageRange": 75,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1900,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 5,
+        "resistanceModifier": -0.1,
+        "laserInstability": -30,
+        "optimalChargeWindowSizeModifier": 10,
+        "shatterdamageModifier": 75,
+        "optimalChargeWindowRateModifier": 20,
+        "catastrophicChargeWindowRateModifier": 20
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "SHIN",
+          "name": "Shubin Interstellar",
+          "description": "Shubin Interstellar Description",
+          "ref": "ab35f85f-919f-4457-8d58-4e885ea6c5c0",
+          "calculatorName": "SHIN"
+        }
+      }
+    },
+    "localName": "mining_laser_shin_hofstede_s1"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 130,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 1,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Impact I",
+      "description": "Mine difficult deposits easier and faster with the Impact I. Thermyte Concern created special focus lenses to increase the laser's power and provide the precision required for a larger optimal charge window. This powerful mining laser does require careful management, as deposits will overheat quicker and explode with more force.",
+      "mass": 1,
+      "ref": "6429e3d3-c813-4dfc-bc68-c95b54123722",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11,
+        "thermalEnergyDraw": 22,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 3125,
+        "powerDraw": 3750,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 30,
+          "zeroDamageRange": 150,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 2200,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": -0.25,
+        "laserInstability": 10,
+        "optimalChargeWindowSizeModifier": 30,
+        "shatterdamageModifier": 75,
+        "optimalChargeWindowRateModifier": 20,
+        "catastrophicChargeWindowRateModifier": 50
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "THCN",
+          "name": "Thermyte Concern",
+          "description": "Thermyte Concern",
+          "ref": "d1a1bf03-89d9-4eae-ac34-11eeb8e45d8f",
+          "calculatorName": "THCN"
+        }
+      }
+    },
+    "localName": "mining_laser_thcn_impact_s1"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 90,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 1,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Klein-S1",
+      "description": "Shubin designed the Klein-S1 to generate a powerful laser that makes mining faster. This increased speed incurs additional risk by boosting a deposit's instability and chance of exploding, but if used correctly, the Klein-S1 can quickly reap rewards for the careful miner.",
+      "mass": 1,
+      "ref": "e6b284b9-456a-4444-b5fc-7c33bf5a6945",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 3000,
+        "powerDraw": 3600,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 30,
+          "zeroDamageRange": 150,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1800,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": -0.2,
+        "laserInstability": 20,
+        "optimalChargeWindowSizeModifier": 15,
+        "shatterdamageModifier": 75,
+        "optimalChargeWindowRateModifier": 10,
+        "catastrophicChargeWindowRateModifier": 75
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "SHIN",
+          "name": "Shubin Interstellar",
+          "description": "Shubin Interstellar Description",
+          "ref": "ab35f85f-919f-4457-8d58-4e885ea6c5c0",
+          "calculatorName": "SHIN"
+        }
+      }
+    },
+    "localName": "mining_laser_shin_klein_s1"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 120,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 1,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Lancet MH1",
+      "description": "Greycat classifies the Lancet MH1 as a support laser best utilized when mining with others. Generating a weaker than average beam, the Lancet MH1 safely heats deposits to reduce their resistance and instability but struggles to shatter them on its own. For mining crews, it's an ideal support laser to use alongside other lasers.",
+      "mass": 1,
+      "ref": "ba94a262-bc0a-4484-9bbd-a4be7a2ec3e7",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 2125,
+        "powerDraw": 2550,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 30,
+          "zeroDamageRange": 150,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1400,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 15,
+        "resistanceModifier": -0.75,
+        "laserInstability": -75,
+        "optimalChargeWindowSizeModifier": 40,
+        "shatterdamageModifier": -50,
+        "optimalChargeWindowRateModifier": -30,
+        "catastrophicChargeWindowRateModifier": -30
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "GRIN",
+          "name": "Greycat Industrial",
+          "description": "A trusted manufacturer of industrial tools since 2337, the company’s extensive line of industrial equipment and armor make it one of the most respected brand names around. Greycat has remained a UEE staple for centuries thanks to their streamlined-yet-inventive designs, exacting safety standards, and a diverse product line.",
+          "ref": "819545f4-18af-49a6-814e-ca4fd08f56e5",
+          "calculatorName": "GREYCAT"
+        }
+      }
+    },
+    "localName": "mining_laser_grin_lancet_s1"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 100,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 2,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Arbor MH2",
+      "description": "The Arbor MH2 is the size two version of Greycat's heralded Arbor mining laser series. Like the smaller variant, the Arbor MH2's solid, reliable design found favor among industrial and solo operations for effectively balancing speed and safety.",
+      "mass": 1,
+      "ref": "4435898e-a6cc-4f51-ab2a-805d0cf1a44a",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 10,
+        "thermalEnergyDraw": 20,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 2500,
+        "powerDraw": 3000,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 60,
+          "zeroDamageRange": 300,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1850,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": 0,
+        "laserInstability": 0,
+        "optimalChargeWindowSizeModifier": 0,
+        "shatterdamageModifier": 0,
+        "optimalChargeWindowRateModifier": 0,
+        "catastrophicChargeWindowRateModifier": 0
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "MISC",
+          "name": "Musashi Industrial & Starflight Concern",
+          "description": "Mass produces very efficient, modular ships, mostly armored freighters of different sizes that make them the preferred brand for traders and larger corporations. Over thirty years ago, MISC signed a lend-lease agreement to establish a tech trade with Xi’An engineers.",
+          "ref": "b28a5c61-63a4-478b-8047-5fba545d5b8a",
+          "calculatorName": "MISC"
+        }
+      }
+    },
+    "localName": "mining_laser_grin_arbor_s2"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 130,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 2,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Helix II",
+      "description": "Thermyte Concern engineered the Helix II to be a mining laser with impressive power and increased range to make it ideal when dealing with difficult deposits. Yet, all this power can be dangerous, as it also slows the throttle's responsiveness and increases the intensity of explosions. To some, the effective use of this size two laser has become a sign of a true mining professional.",
+      "mass": 1,
+      "ref": "3bcde69d-3e3a-4f78-b2cb-8189b349e4d2",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 3250,
+        "powerDraw": 3900,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 75,
+          "zeroDamageRange": 375,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 2300,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 5,
+        "resistanceModifier": -0.1,
+        "laserInstability": -50,
+        "optimalChargeWindowSizeModifier": 15,
+        "shatterdamageModifier": 50,
+        "optimalChargeWindowRateModifier": 20,
+        "catastrophicChargeWindowRateModifier": 20
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "THCN",
+          "name": "Thermyte Concern",
+          "description": "Thermyte Concern",
+          "ref": "d1a1bf03-89d9-4eae-ac34-11eeb8e45d8f",
+          "calculatorName": "THCN"
+        }
+      }
+    },
+    "localName": "mining_laser_thcn_helix_s2"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 120,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 2,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Hofstede-S2",
+      "description": "Built with safety in mind, the Hofstede-S2 sacrifices range and focuses on dampening a deposit's instability to make it safer to mine. Miners looking to decrease the chance of a catastrophic explosion should turn to this reliable and affordable size two mining laser from Shubin.",
+      "mass": 1,
+      "ref": "b422bcf8-b553-4b09-b2be-e92ab2f80e9a",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11,
+        "thermalEnergyDraw": 22,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 2000,
+        "powerDraw": 2400,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 45,
+          "zeroDamageRange": 225,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1900,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 5,
+        "resistanceModifier": -0.1,
+        "laserInstability": -30,
+        "optimalChargeWindowSizeModifier": 10,
+        "shatterdamageModifier": 75,
+        "optimalChargeWindowRateModifier": 20,
+        "catastrophicChargeWindowRateModifier": 20
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "SHIN",
+          "name": "Shubin Interstellar",
+          "description": "Shubin Interstellar Description",
+          "ref": "ab35f85f-919f-4457-8d58-4e885ea6c5c0",
+          "calculatorName": "SHIN"
+        }
+      }
+    },
+    "localName": "mining_laser_shin_hofstede_s2"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 130,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 2,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Impact II",
+      "description": "Mine difficult deposits easier and faster with the Impact II. Thermyte Concern created special focus lenses to increase the laser's power and provide the precision required for a larger optimal charge window. This powerful size two mining laser does require careful management, as deposits will overheat quicker and explode with more force.",
+      "mass": 1,
+      "ref": "30545178-b09e-495d-a8b8-c6267ce2b495",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11,
+        "thermalEnergyDraw": 22,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 3125,
+        "powerDraw": 3750,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 60,
+          "zeroDamageRange": 300,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 2200,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": -0.25,
+        "laserInstability": 10,
+        "optimalChargeWindowSizeModifier": 30,
+        "shatterdamageModifier": 75,
+        "optimalChargeWindowRateModifier": 20,
+        "catastrophicChargeWindowRateModifier": 50
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "THCN",
+          "name": "Thermyte Concern",
+          "description": "Thermyte Concern",
+          "ref": "d1a1bf03-89d9-4eae-ac34-11eeb8e45d8f",
+          "calculatorName": "THCN"
+        }
+      }
+    },
+    "localName": "mining_laser_thcn_impact_s2"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 90,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 2,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Klein-S2",
+      "description": "Shubin designed the Klein-S2 to generate a powerful laser that makes mining faster. This increased speed incurs additional risk by boosting a deposit's instability and chance of exploding, but if used correctly, this size two mining laser can quickly reap rewards for the careful miner.",
+      "mass": 1,
+      "ref": "41850766-d4a8-4255-be75-0d24af7280b0",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 3000,
+        "powerDraw": 3600,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 60,
+          "zeroDamageRange": 300,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1800,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 10,
+        "resistanceModifier": -0.2,
+        "laserInstability": 20,
+        "optimalChargeWindowSizeModifier": 15,
+        "shatterdamageModifier": 75,
+        "optimalChargeWindowRateModifier": 10,
+        "catastrophicChargeWindowRateModifier": 75
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "SHIN",
+          "name": "Shubin Interstellar",
+          "description": "Shubin Interstellar Description",
+          "ref": "ab35f85f-919f-4457-8d58-4e885ea6c5c0",
+          "calculatorName": "SHIN"
+        }
+      }
+    },
+    "localName": "mining_laser_shin_klein_s2"
+  },
+  {
+    "calculatorType": "mining-laser",
+    "data": {
+      "health": 8000,
+      "maxLifetimeHours": 120,
+      "type": "WeaponMining",
+      "subType": "Gun",
+      "size": 2,
+      "grade": "A",
+      "requiredTags": "miningMount",
+      "name": "Lancet MH2",
+      "description": "Greycat classifies the Lancet MH2 as a support laser best utilized when mining with others. Generating a weaker than average beam, the Lancet MH2 safely heats deposits to reduce their resistance and instability but struggles to shatter them on its own. For mining crews, it's an ideal support laser to use alongside other lasers.",
+      "mass": 1,
+      "ref": "c2006c91-f8f7-4bda-ae38-e0ca5af5c737",
+      "heat": {
+        "temperatureToIR": 6,
+        "startIRTemperature": 250,
+        "overpowerHeat": 0,
+        "overclockThresholdMinHeat": 0,
+        "overclockThresholdMaxHeat": 0,
+        "thermalEnergyBase": 11.5,
+        "thermalEnergyDraw": 23,
+        "thermalConductivity": 3,
+        "specificHeatCapacity": 13,
+        "mass": 200,
+        "surfaceArea": 50,
+        "startCoolingTemperature": 300,
+        "maxCoolingRate": 1,
+        "maxTemperature": 450,
+        "overheatTemperature": 370,
+        "recoveryTemperature": 350,
+        "minTemperature": 0,
+        "misfireMinTemperature": 370,
+        "misfireMaxTemperature": 600
+      },
+      "power": {
+        "powerBase": 2125,
+        "powerDraw": 2550,
+        "timeToReachDrawRequest": 0,
+        "safeguardPriority": 20,
+        "isThrottleable": true,
+        "isOverclockable": true,
+        "overclockThresholdMin": 0.25,
+        "overclockThresholdMax": 0.53,
+        "overpowerPerformance": 0.3,
+        "overclockPerformance": 0.24,
+        "powerToEM": 2,
+        "decayRateOfEM": 0.15,
+        "warningDelayTime": 0.3,
+        "warningDisplayTime": 8
+      },
+      "weapon": {
+        "supplementaryFireTime": 0,
+        "idealCombatRange": 25,
+        "connection": {
+          "powerActiveCooldown": 1,
+          "heatRateOnline": 110,
+          "maxGlow": 100,
+          "noPowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "underpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 0.1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overpowerStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.2,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "overclockStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1.5,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          },
+          "heatStats": {
+            "fireRate": 0,
+            "fireRateMultiplier": 1,
+            "damageMultiplier": 1,
+            "projectileSpeedMultiplier": 1,
+            "pellets": 0,
+            "burstShots": 0,
+            "ammoCost": 0,
+            "ammoCostMultiplier": 1,
+            "heatGenerationMultiplier": 1,
+            "spreadModifier": {
+              "minMultiplier": 1,
+              "maxMultiplier": 1,
+              "firstAttackMultiplier": 1,
+              "attackMultiplier": 1,
+              "decayMultiplier": 1,
+              "additiveModifier": 0
+            }
+          }
+        },
+        "mining": {
+          "energyRate": 0,
+          "fullDamageRange": 60,
+          "zeroDamageRange": 300,
+          "heatPerSecond": 0,
+          "hitRadius": 0.1,
+          "damage": {
+            "damagePhysical": 0,
+            "damageEnergy": 1400,
+            "damageDistortion": 0,
+            "damageThermal": 0,
+            "damageBiochemical": 0,
+            "damageStun": 0
+          }
+        }
+      },
+      "miningLaser": {
+        "throttleLerpSpeed": 15,
+        "resistanceModifier": -0.75,
+        "laserInstability": -75,
+        "optimalChargeWindowSizeModifier": 40,
+        "shatterdamageModifier": -50,
+        "optimalChargeWindowRateModifier": -30,
+        "catastrophicChargeWindowRateModifier": -30
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "GRIN",
+          "name": "Greycat Industrial",
+          "description": "A trusted manufacturer of industrial tools since 2337, the company’s extensive line of industrial equipment and armor make it one of the most respected brand names around. Greycat has remained a UEE staple for centuries thanks to their streamlined-yet-inventive designs, exacting safety standards, and a diverse product line.",
+          "ref": "819545f4-18af-49a6-814e-ca4fd08f56e5",
+          "calculatorName": "GREYCAT"
+        }
+      }
+    },
+    "localName": "mining_laser_grin_lancet_s2"
+  }
+]

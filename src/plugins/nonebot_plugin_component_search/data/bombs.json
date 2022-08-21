@@ -1,0 +1,92 @@
+[
+  {
+    "calculatorType": "bomb",
+    "data": {
+      "health": 10,
+      "type": "Bomb",
+      "size": 3,
+      "grade": "A",
+      "name": "Thunderball",
+      "shortName": "Thunderball",
+      "description": "Target ground forces from a safe distance above with the Thunderball. Despite the small size, these S3 bombs pack a powerful payload, allowing users to either deploy multiple bombs to overwhelm a stationary target or drop them at intervals to hit moving targets. The Thunderball uses FireStorm Kinetics' patented Atmo-Xact fins that deploy once dropped to provide additional guidance en route to target.",
+      "mass": 252,
+      "ref": "3c3f79ae-acb2-4472-a08d-2ddb1afcc700",
+      "bomb": {
+        "maxLifetime": 300,
+        "armTime": 0.5,
+        "igniteTime": 0.1,
+        "collisionDelayTime": 0.5,
+        "explosionSafetyDistance": 50,
+        "projectileProximity": 1,
+        "dragAreaRadius": 0.5,
+        "minRadius": 40,
+        "maxRadius": 40,
+        "minPhysRadius": 40,
+        "maxPhysRadius": 40,
+        "damage": {
+          "damagePhysical": 12500,
+          "damageEnergy": 14500,
+          "damageDistortion": 0,
+          "damageThermal": 0,
+          "damageBiochemical": 0,
+          "damageStun": 0
+        }
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "FSKI",
+          "ref": "5f81335d-44e6-4104-841e-c5af9df06829",
+          "name": "FireStorm Kinetics",
+          "calculatorName": "FSKI"
+        }
+      }
+    },
+    "localName": "bomb_s03_fski_thunderball"
+  },
+  {
+    "calculatorType": "bomb",
+    "data": {
+      "health": 100,
+      "type": "Bomb",
+      "size": 10,
+      "grade": "A",
+      "name": "Colossus",
+      "shortName": "Colossus",
+      "description": "The Talon Argos strike torpedo features a classic, straightforward design that relies on exacting manufacturing standards and a classic cross section targeting system.",
+      "mass": 951,
+      "ref": "2b8a744d-c0a0-4f92-b0e6-bf4ae077cc11",
+      "bomb": {
+        "maxLifetime": 300,
+        "armTime": 5,
+        "igniteTime": 0.2,
+        "collisionDelayTime": 0.5,
+        "explosionSafetyDistance": 50,
+        "projectileProximity": 1,
+        "dragAreaRadius": 0.9,
+        "minRadius": 250,
+        "maxRadius": 250,
+        "minPhysRadius": 250,
+        "maxPhysRadius": 250,
+        "damage": {
+          "damagePhysical": 45676.59,
+          "damageEnergy": 522620.4,
+          "damageDistortion": 0,
+          "damageThermal": 0,
+          "damageBiochemical": 0,
+          "damageStun": 0
+        }
+      },
+      "manufacturerData": {
+        "calculatorType": "manufacturer",
+        "data": {
+          "nameSmall": "FSKI",
+          "ref": "5f81335d-44e6-4104-841e-c5af9df06829",
+          "name": "FireStorm Kinetics",
+          "calculatorName": "FSKI"
+        }
+      }
+    },
+    "localName": "bomb_s10_fski_colossus"
+  }
+]
