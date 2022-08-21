@@ -31,7 +31,7 @@ daily_sign_schedule = require("nonebot_plugin_apscheduler").scheduler
 daily_mihoyo_bbs_sign_schedule = require("nonebot_plugin_apscheduler").scheduler
 resin_notic_schedule = require("nonebot_plugin_apscheduler").scheduler
 
-get_weapon = on_startswith(".武器", priority=priority)
+get_weapon = on_startswith(".原神武器", priority=1000)
 get_char = on_startswith(".角色", priority=priority)
 get_cost = on_startswith(".材料", priority=priority)
 get_polar = on_startswith(".命座", priority=priority)
