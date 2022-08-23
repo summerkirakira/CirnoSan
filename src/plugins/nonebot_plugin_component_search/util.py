@@ -13,7 +13,7 @@ def convert_image_to_bytes(image: Image) -> bytes:
 
 
 async def send_image(bot: Bot, group_id: int, ref: str):
-    await bot.call_api('send_group_msg', group_id=group_id, message=f"[CQ:image,file=https://biaoju.site/components/{ref}&ver=1.1.png]")
+    await bot.call_api('send_group_msg', group_id=group_id, message=f"[CQ:image,file=https://biaoju.site/components/{ref}]")
 
 
 def check_is_sendable(item_list: list[tuple[ComponentData, float]]) -> list[tuple[ComponentData, float]]:
