@@ -19,6 +19,7 @@ async def _get_default_entries(bot: Bot, event: GroupMessageEvent):
     key = event.get_plaintext().replace('.', '').strip()
     if key in config:
         await bot.call_api('send_group_msg', message=config[key], group_id=event.group_id)
+        get_default_entries.block = True
         return
     get_default_entries.block = False
 
