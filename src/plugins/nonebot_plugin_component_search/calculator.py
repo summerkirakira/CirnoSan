@@ -267,7 +267,7 @@ class Calculator:
                 info_list.append(group)
                 info_list.append(str(weapon.data.size))
                 info_list.append(str(weapon.data.weapon.fireActions.fireRate))
-                info_list.append(str(weapon.data.weapon.damage.alphaMax))
+                info_list.append(str(round(weapon.data.weapon.damage.alphaMax * weapon.data.weapon.damage.fireRateMax, 2)))
                 ammo_count: str = str(weapon.data.ammoContainer.initialAmmoCount) \
                     if weapon.data.ammoContainer.initialAmmoCount != 0 else "∞"
                 info_list.append(ammo_count)
