@@ -240,7 +240,7 @@ async def _remove_entries(bot: Bot, event: Event, state: T_State=State()):
         await bot.send(event, Message(MessageSegment.text(random.choice(Config.Config.entry_not_legal))))
         return
     await remove_entry(state['entry'])
-    del entries[state['entry_index']]
+    entries = await fetch_all_entries()
     await bot.send(event, Message(MessageSegment.text(random.choice(Config.Config.entry_remove_success))))
 
 
@@ -324,17 +324,7 @@ async def _private_entries(bot: Bot, event: Event, state: T_State = State()):
                 'create_time': time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(int(time.time())))
             }
             await bot.send(event, Message([MessageSegment.text(random.choice(Config.Config.entry_modify_success))]))
-        entries_to_del = []
-        for i in range(len(entries)):
-            if entries[i]['keywords'] == keyword and (str(event.group_id) in entries[i]['enabled_groups'].split('#') or
-                                                      entries[i]['enabled_groups'].lower() == 'all_groups') and entries[i]['creator_id'] == str(event.sender.user_id):
-                entries_to_del.append(i)
-        for i in entries_to_del:
-            del entries[i]
-            del entries_to_del[0]
-            for j in range(len(entries_to_del)):
-                entries_to_del[j] -= 1
-        entries.append(state['new_entry'])
+        entries = await fetch_all_entries()
 
 
 @show_entries.handle()
