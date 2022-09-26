@@ -16,6 +16,7 @@ analysis_bili = on_regex(
 @analysis_bili.handle()
 async def analysis_main(event: GroupMessageEvent) -> None:
     if event.group_id not in [901809142, 1047437620]:
+        analysis_bili.block = False
         return
     text = str(event.message).strip()
     if re.search(r"(b23.tv)|(bili(22|23|33|2233).cn)", text, re.I):
