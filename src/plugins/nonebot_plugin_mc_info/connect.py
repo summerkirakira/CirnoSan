@@ -30,14 +30,15 @@ class MinecraftConnector:
         self.login_event: List[dict] = []
         self.logout_event: List[dict] = []
         self.players: List[dict] = []
-        if not self.test_connection():
-            self.connected = False
-            self.ws_tread = self.WebSocketThread(self._ws_connect)
-            self.ws_tread.start()
-        else:
-            self.ws_tread = self.WebSocketThread(self._ws_connect)
-            self.ws_tread.start()
-            nonebot.logger.opt(colors=True).success(f"<g>与服务器: {server_uri}的ping test成功！</g>")
+        self.connected = True
+        # if not self.test_connection():
+        #     self.connected = False
+        #     self.ws_tread = self.WebSocketThread(self._ws_connect)
+        #     self.ws_tread.start()
+        # else:
+        #     self.ws_tread = self.WebSocketThread(self._ws_connect)
+        #     self.ws_tread.start()
+        #     nonebot.logger.opt(colors=True).success(f"<g>与服务器: {server_uri}的ping test成功！</g>")
 
     async def get_uuid_from_name(self, name) -> Optional[str]:
         """
