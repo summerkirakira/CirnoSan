@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import Any, AsyncGenerator, Dict, List, Type, Union
 
-from nonebot import on_command, on_message, require
+from nonebot import on_command, on_message, require, on_startswith
 from nonebot.adapters.onebot.v11 import MessageEvent, MessageSegment
 from nonebot.log import logger
 from nonebot.matcher import Matcher
@@ -96,14 +96,17 @@ async def ai_chat(event: MessageEvent, state: T_State=State()) -> None:
     session[session_id]["parent_id"] = chat_bot.parent_id
 
 
-refresh = on_command("刷新对话", aliases={"刷新会话"}, block=True, rule=to_me(), priority=1)
+refresh = on_startswith(".刷新对话", block=True, priority=3)
 
 
 @refresh.handle()
 async def refresh_conversation(event: MessageEvent) -> None:
     session_id = event.get_session_id()
-    del session[session_id]
-    await refresh.send("当前会话已刷新")
+    if session_id in session:
+        del session[session_id]
+        await refresh.send("当前会话已刷新")
+    else:
+        await refresh.send("当前会话已刷新")
 
 
 @scheduler.scheduled_job("interval", minutes=config.chatgpt_refresh_interval)
