@@ -18,7 +18,7 @@ config: dict = get_config()
 
 if config['mysql_host'] != '':
     mysql_pool = Database(
-        f"mysql://{config['mysql_user']}:{config['mysql_password']}@{config['mysql_host']}:{config['mysql_port']}/{config['mysql_db']}")
+        f"mysql://{config['mysql_user']}:{config['mysql_password']}@{config['mysql_host']}:{config['mysql_port']}/{config['mysql_db']}?charset=utf8mb4")
     nonebot.export().mysql_pool = mysql_pool
 
 
