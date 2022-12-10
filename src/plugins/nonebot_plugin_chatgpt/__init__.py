@@ -76,7 +76,7 @@ matcher = create_matcher(config.chatgpt_command, config.chatgpt_to_me)
 @matcher.handle(parameterless=[Depends(check_cooldown)])
 async def ai_chat(event: MessageEvent, state: T_State=State()) -> None:
     if isinstance(event, GroupMessageEvent):
-        if event.group_id != 1047437620:
+        if event.group_id != 1047437620 or event.group_id != 696608010:
             return
     message = _command_arg(state) or event.get_message()
     text = message.extract_plain_text().strip()
