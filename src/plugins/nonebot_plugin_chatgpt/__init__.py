@@ -2,7 +2,7 @@ from collections import defaultdict
 from typing import Any, AsyncGenerator, Dict, List, Type, Union
 
 from nonebot import on_command, on_message, require, on_startswith
-from nonebot.adapters.onebot.v11 import MessageEvent, MessageSegment
+from nonebot.adapters.onebot.v11 import MessageEvent, MessageSegment, GroupMessageEvent
 from nonebot.log import logger
 from nonebot.matcher import Matcher
 from nonebot.params import Depends, _command_arg
@@ -75,6 +75,9 @@ matcher = create_matcher(config.chatgpt_command, config.chatgpt_to_me)
 
 @matcher.handle(parameterless=[Depends(check_cooldown)])
 async def ai_chat(event: MessageEvent, state: T_State=State()) -> None:
+    if isinstance(event, GroupMessageEvent):
+        if event.group_id != 1047437620:
+            return
     message = _command_arg(state) or event.get_message()
     text = message.extract_plain_text().strip()
     session_id = event.get_session_id()
