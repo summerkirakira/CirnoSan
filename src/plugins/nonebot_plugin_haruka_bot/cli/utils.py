@@ -19,9 +19,16 @@ def create_env():
     if file_path.exists():
         return
 
+    if any(Path.cwd().iterdir()):
+        print("文件夹不为空，请更换空文件夹后重试")
+        import sys
+        sys.exit()
+
     while True:
         try:
-            superusers = click.prompt("主人QQ号 (多个使用空格分开)", default="", show_default=False)
+            superusers = click.prompt(
+                "主人QQ号 (多个使用空格分开)", default="", show_default=False
+            )
             superusers = [int(superuser) for superuser in superusers.split()]
             env["SUPERUSERS"] = superusers
             break
