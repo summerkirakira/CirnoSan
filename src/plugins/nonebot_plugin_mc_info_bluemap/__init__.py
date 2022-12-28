@@ -15,7 +15,7 @@ async def _server_status(bot: Bot, event: GroupMessageEvent):
         try:
             r = client.get("http://mc.kirakira.vip:6353/maps/overworld/live/players")
             players: Players = Players.parse_raw(r.text)
-            text: str = f"服务器地址: mc.kirakira.vip:25568\n网页地图: mc.kirakria.vip:6353\n当前服务器在线人数：{len(players.players)}人\n"
+            text: str = f"服务器地址: mc.kirakira.vip:25568\n国内转接:cn.kirakira.vip:25568\n网页地图: mc.kirakira.vip:6353\n当前服务器在线人数：{len(players.players)}人\n"
             text += "\n".join([f"{player.name}({int(player.position.x)},{int(player.position.y)},{int(player.position.z)})" for player in players.players])
             text += "\n\n欢迎来找小九玩哦～"
             await server_status.finish(Message(MessageSegment.text(text)))
