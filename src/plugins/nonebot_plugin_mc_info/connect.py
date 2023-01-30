@@ -3,8 +3,10 @@ import threading
 import asyncio
 import json
 import time
+import re
 from functools import wraps
 from typing import Optional, Dict, List
+from loguru import logger
 
 import websockets
 from websockets.exceptions import ConnectionClosedError, InvalidStatusCode
@@ -17,8 +19,22 @@ class MinecraftConnector:
         'on_player_chat': [],
         'on_player_login': [],
         'on_player_disconnected': [],
-        'on_player_execute_command': []
+        'on_player_execute_command': [],
+        'on_player_death': [],
+        'on_server_log': []
     }
+    player_name_key_list = ["Name", "displayName", "name"]
+
+    def get_name_key(self, player: dict) -> str:
+        """
+        获取玩家的name key
+        :param player:
+        :return:
+        """
+        for key in self.player_name_key_list:
+            if key in player:
+                return key
+        return "Name"
 
     def __init__(self, server_uri: str, auth_key: str):
         self.server_uri: str = server_uri
@@ -29,16 +45,17 @@ class MinecraftConnector:
         self.command_list: List[dict] = []
         self.login_event: List[dict] = []
         self.logout_event: List[dict] = []
+        self.player_death: List[dict] = []
         self.players: List[dict] = []
-        self.connected = True
-        # if not self.test_connection():
-        #     self.connected = False
-        #     self.ws_tread = self.WebSocketThread(self._ws_connect)
-        #     self.ws_tread.start()
-        # else:
-        #     self.ws_tread = self.WebSocketThread(self._ws_connect)
-        #     self.ws_tread.start()
-        #     nonebot.logger.opt(colors=True).success(f"<g>与服务器: {server_uri}的ping test成功！</g>")
+        self.online_players: List[dict] = []
+        if not self.test_connection():
+            self.connected = False
+            self.ws_tread = self.WebSocketThread(self._ws_connect)
+            self.ws_tread.start()
+        else:
+            self.ws_tread = self.WebSocketThread(self._ws_connect)
+            self.ws_tread.start()
+            nonebot.logger.opt(colors=True).success(f"<g>与服务器: {server_uri}的Ping test成功！</g>")
 
     async def get_uuid_from_name(self, name) -> Optional[str]:
         """
@@ -47,11 +64,17 @@ class MinecraftConnector:
         :return: Optional[str]
         """
         for player in self.players:
-            if player["Name"].lower() == name.lower():
+            key = self.get_name_key(player)
+            if key not in player:
+                continue
+            if player[key].lower() == name.lower():
                 return player["uuid"]
         self.players = await self.get_all_players()
         for player in self.players:
-            if player["Name"].lower() == name.lower():
+            key = self.get_name_key(player)
+            if key not in player:
+                continue
+            if player[key].lower() == name.lower():
                 return player["uuid"]
         return None
 
@@ -63,11 +86,13 @@ class MinecraftConnector:
         """
         for player in self.players:
             if player["uuid"] == uuid:
-                return player["Name"]
+                key = self.get_name_key(player)
+                return player[key]
         self.players = await self.get_all_players()
         for player in self.players:
             if player["uuid"] == uuid:
-                return player["Name"]
+                key = self.get_name_key(player)
+                return player[key]
         return '未知'
 
     async def process_player_chat(self, message) -> dict:
@@ -87,6 +112,47 @@ class MinecraftConnector:
             "uuid": player_uuid,
             "time": send_time
         }
+
+    @classmethod
+    async def process_player_death(cls, message, death_configs) -> str:
+        """
+        格式化服务器日志中的玩家死亡日志
+        :param message: str
+        :param death_configs: dict
+        :return: dict
+        """
+
+        for death_config in death_configs:
+            regex = death_config["regex"]
+            death_message = death_config["message"]
+            from_parameters = re.findall(r"%(.*?)%", regex)
+            new_regex = re.sub(r"%(.*?)%", r"(.*?)", regex)
+            if re.match(new_regex, message):
+                matched = re.finditer(new_regex, message)
+                for index, match in enumerate(matched):
+                    from_para = from_parameters[index]
+                    death_message.replace(f"%{from_para}%", match)
+                return death_message
+        return message
+
+    @classmethod
+    def is_death_message(cls, message: str) -> bool:
+        """
+        判断是否是死亡消息
+        :param message: str
+        :return: bool
+        """
+        if 'was killed' in message:
+            return True
+        if 'discovered floor was lava' in message:
+            return True
+        if 'fell out of the world' in message:
+            return True
+        if 'was pricked to death' in message:
+            return True
+        if 'was shot by an arrow' in message:
+            return True
+        return False
 
     async def process_commands(self, message) -> dict:
         """
@@ -139,11 +205,16 @@ class MinecraftConnector:
                     nonebot.logger.opt(colors=True).success(f"<g>与服务器: {self.server_uri}的Websocket连接建立成功...</g>")
                     self.connected = True
                     while True:
+                        self.connected = True
                         log = await websocket.recv()
                         message = json.loads(log)
                         if int(round(time.time() * 1000)) - message["timestampMillis"] > 10000:
                             # 超过5s的记录将不会执行
                             continue
+                        logger.info(f"收到服务器[{self.server_uri}]的消息: {message['message']}")
+                        message["message"] = message["message"].strip()
+                        if message["message"].startswith("["):
+                            message["message"] = message["message"].split("]")[-1].strip()
                         if "logged in with entity id" in message["message"] and 'minecraft' in message["loggerName"]:
                             self.login_event.append(message)
                             for listener in self.listener_dict['on_player_login']:
@@ -160,6 +231,13 @@ class MinecraftConnector:
                             self.command_list.append(message)
                             for listener in self.listener_dict['on_player_execute_command']:
                                 await listener(message=message, server=self)
+                        elif 'DedicatedServer' in message['loggerName'] and self.is_death_message(message['message']):
+                            self.player_death.append(message)
+                            for listener in self.listener_dict['on_player_death']:
+                                await listener(message=message, server=self)
+                        else:
+                            for listener in self.listener_dict['on_server_log']:
+                                await listener(message=message, server=self)
             except ConnectionClosedError as e:
                 self.connected = False
                 nonebot.logger.opt(colors=True).warning(f"<y>服务器: {self.server_uri}关闭连接(可能原因：服务器被关闭), 将在10秒后重试...</y>")
@@ -171,6 +249,11 @@ class MinecraftConnector:
             except InvalidStatusCode as e:
                 nonebot.logger.opt(colors=True).warning(
                     f"<y>服务器: {self.server_uri}连接404(可能原因：服务器未开启，插件端口配置错误), 将在10秒后重试...</y>")
+                await asyncio.sleep(10)
+            except Exception as e:
+                self.connected = False
+                nonebot.logger.opt(colors=True).warning(f"<y>服务器: {self.server_uri}连接失败(未知原因), 将在10秒后重试...</y>")
+                nonebot.logger.exception(e)
                 await asyncio.sleep(10)
 
     def test_connection(self) -> bool:
@@ -204,9 +287,14 @@ class MinecraftConnector:
         获取当前在线玩家
         :return: list
         """
-        async with httpx.AsyncClient() as client:
-            response = await client.get(f"http://{self.server_uri}/v1/players", headers={"key": self.auth_key})
-            return json.loads(response.text)
+        try:
+            async with httpx.AsyncClient() as client:
+                response = await client.get(f"http://{self.server_uri}/v1/players", headers={"key": self.auth_key})
+                self.online_players = json.loads(response.text)
+                return self.online_players
+        except Exception as e:
+            # nonebot.logger.exception(e)
+            return self.online_players
 
     async def get_worlds(self) -> dict:
         """

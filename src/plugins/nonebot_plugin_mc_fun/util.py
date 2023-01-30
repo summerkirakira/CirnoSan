@@ -1,14 +1,16 @@
+import asyncio
+
 import nonebot
 from nonebot.log import logger
 from ..nonebot_plugin_mc_info.connect import MinecraftConnector
-from nonebot.plugin import require
+from ..nonebot_plugin_mc_info import get_server_list
 from .config import current_folder, default_config
 from .data_source import get_config, save_config_to_yaml
 from nonebot.adapters.onebot.v11.exception import ActionFailed, NetworkError
 import os
 
-
-plugin_mc_info = require('nonebot_plugin_mc_info')
+server_lists = []
+current_player_num = 0
 
 
 async def safe_send(send_type, type_id, message):
@@ -37,6 +39,7 @@ async def safe_send(send_type, type_id, message):
 
 
 async def message_preprocess(message, server: MinecraftConnector, enable_placeholder_api: bool, uuid=None):
+    global current_player_num
     if enable_placeholder_api:
         return await server.placeholder_api(message, uuid=uuid)
     else:
@@ -47,16 +50,23 @@ async def message_preprocess(message, server: MinecraftConnector, enable_placeho
             server_info = await server.get_server_info()
         if "%server_online%" in parsed_message:
             players = await server.get_players()
-            parsed_message = parsed_message.replace("%server_online%", str(len(players)))
+            online_players = len(players)
+            while online_players == 0:
+                await asyncio.sleep(1)
+                online_players = len(await server.get_players())
+            parsed_message = parsed_message.replace("%server_online%", str(online_players))
+
         if "%server_name%" in parsed_message:
             parsed_message = parsed_message.replace("%server_name%", server_info['name'])
         return parsed_message
 
 
 def refresh_config():
+    global server_lists
+    server_lists = get_server_list()
     if not os.path.exists(os.path.join(current_folder, 'config.yaml')):
         config_list = []
-        for server in plugin_mc_info.mc_server_list:
+        for server in server_lists:
             new_config = default_config.copy()
             new_config["server_uri"] = server.server_uri
             config_list.append(new_config)
@@ -64,7 +74,7 @@ def refresh_config():
     else:
         configs = get_config()
         new_configs = configs
-        for server in plugin_mc_info.mc_server_list:
+        for server in server_lists:
             is_find = False
             for my_config in configs:
                 if server.server_uri == my_config["server_uri"]:
@@ -83,7 +93,7 @@ def get_group_bind_server(group_id):
     for server_config in server_configs:
         if group_id in server_config["is_focus"]:
             config = server_config
-            for server in plugin_mc_info.mc_server_list:
+            for server in server_lists:
                 if server.server_uri == config["server_uri"]:
                     mc_server = server
                     return config, mc_server
@@ -92,7 +102,7 @@ def get_group_bind_server(group_id):
 
 async def check_server():
     server_configs = get_config()
-    for server in plugin_mc_info.mc_server_list:
+    for server in server_lists:
         server_plugins = await server.get_plugins()
         for plugin in server_plugins:
             if plugin["name"] == "PlaceholderAPI":
