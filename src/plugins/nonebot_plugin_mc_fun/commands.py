@@ -37,7 +37,7 @@ set_current_server = on_startswith(".绑定服务器", priority=18)
 # 绑定优先服务器
 set_entries = on_startswith(".mc词条", priority=12)
 # 设定mc词条
-execute_command = on_startswith(".指令", priority=16)
+execute_command = on_startswith(".cmd", priority=16)
 # 执行mc命令
 get_plugin_list = on_startswith(".插件列表", priority=16)
 # 获取插件列表
@@ -364,7 +364,7 @@ async def _execute_command(bot: Bot, event: GroupMessageEvent):
     if not server.connected:
         await bot.send(event, Message(MessageSegment.text("服务器未连接呢～")))
         return
-    command = event.get_plaintext().replace(".指令", "").strip()
+    command = event.get_plaintext().replace(".cmd", "").strip()
     if not server_config["server_command"]:
         await bot.send(event, Message(MessageSegment.text("服务器指令被关闭了哦～")))
         return
