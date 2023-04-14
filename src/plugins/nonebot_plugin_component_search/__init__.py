@@ -81,7 +81,7 @@ async def _(bot: Bot, event: GroupMessageEvent):
         if matched_list:
             checked_list = check_is_sendable(matched_list)
             if len(checked_list) == 1:
-                await bot.send(event, MessageSegment.image(f'https://localhost/components/v2/{checked_list[0][0].data.ref}.png'))
+                await bot.send(event, MessageSegment.image(f'https://www.biaoju.site/components/v2/{checked_list[0][0].data.ref}.png'))
             else:
                 message = double_check_message(checked_list)
                 await bot.send(event, Message(MessageSegment.text(message)))
